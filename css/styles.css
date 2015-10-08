@@ -6,14 +6,32 @@ nav#main{
     background-color: black;
     color: white;
 }
+div#central{
+    position: relative;
+}
+div#central img{
+    width: 100%;
+}
+div#central #search{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(223, 226, 229, 0.42);
+}
 section#links, section#content{
     float: left;
 }
 section#links{
     width: 400px;
+    height: 620px;
+    background: #efefef;
 }
 section#content{
     width: 800px;
+    height: 580px;
+    margin-bottom: 5px;
 }
 section#content section:first-child{
     padding: 10px;
@@ -29,3 +47,95 @@ section#content section:first-child > article{
 section#content section:first-child > article img{
     margin-bottom: 10px;
 }
+section#content section header h2, section#content section header div{
+    display: inline-block;
+}
+section#content section header h2{
+    font-size: 20px;
+    padding: 5px;
+    width: 80%;
+}
+section#content section header div{
+    border-left: 1px solid #333;
+    padding: 5px;
+}
+section#content section article{
+    display: inline-block;
+    margin: 5px;
+}
+section#content section article img{
+    width: 120px;
+}
+.clear{
+    clear: both;
+}
+footer{
+    padding: 10px;
+    width: 780px;
+    font-size: 16px;
+    font-style: italic;
+    background-color: black;
+    color: white;
+    float: left;
+}
+@media (max-width: 980px){
+    #container{
+        width: 100%;
+    }
+    section#links, section#content{
+        float: none;
+        width: 100%;
+    }
+    section#links{
+        margin-top: 560px;
+        height: 260px;
+    }
+    section#content{
+        margin-top: -820px;
+    }
+    footer{
+        width: 940px;
+        margin-top: 230px;
+    }
+}
+@media (max-width: 799px){
+    section#content section:first-child > article{
+        width: 150px; /*260px*/
+    }
+    section#content section article{
+        display: inline-block;
+        margin: 5px;
+    }
+    section#content section article img{
+        width: 120px;
+    }
+        
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
